@@ -11,13 +11,6 @@
     "plugins": [
         "node"
     ],
-    "settings": {
-        "node": {
-            "tryExtensions": [
-                ".js"
-            ]
-        }
-    },
     "rules": {
         // Possible Errors Section Start
         "for-direction": "error",
