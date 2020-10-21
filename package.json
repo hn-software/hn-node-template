@@ -6,7 +6,8 @@
     },
     "description": "Template for HN node applications.",
     "private": true,
-    "main": "app.js",
+    "bin": "src/app.js",
+    "main": "src/app.js",
     "scripts": {
         "start": "nodemon src/app.js",
         "test": "mocha",
