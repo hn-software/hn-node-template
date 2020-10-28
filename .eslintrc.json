@@ -272,7 +272,9 @@
         // Stylistic Issues Section Start
         "array-bracket-newline": [
             "error",
-            "always"
+            {
+                "minItems": 2
+            }
         ],
         "array-bracket-spacing": "error",
         "array-element-newline": "error",
