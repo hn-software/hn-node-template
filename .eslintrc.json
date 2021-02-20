@@ -305,10 +305,9 @@
         "implicit-arrow-linebreak": "error",
         "indent": [
             "error",
-            4,
+            2,
             {
-                "SwitchCase": 1,
-                "flatTernaryExpressions": true
+                "SwitchCase": 1
             }
         ],
         "jsx-quotes": "error",
@@ -556,8 +555,8 @@
         "no-dupe-class-members": "error",
         "no-duplicate-imports": "error",
         "no-new-symbol": "error",
-        "no-restricted-exports": "error",
-        "no-restricted-imports": "error",
+        "no-restricted-exports": "off",
+        "no-restricted-imports": "off",
         "no-this-before-super": "error",
         "no-useless-computed-key": [
             "error",
