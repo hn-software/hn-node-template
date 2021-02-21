@@ -79,6 +79,12 @@
                 "enforceForOrderingRelations": true
             }
         ],
+        "no-unsafe-optional-chaining": [
+            "error",
+            {
+                "disallowArithmeticOperators": true
+            }
+        ],
         "no-useless-backreference": "error",
         "require-atomic-updates": "error",
         "use-isnan": [
@@ -187,6 +193,7 @@
         "no-new": "error",
         "no-new-func": "error",
         "no-new-wrappers": "error",
+        "no-nonoctal-decimal-escape": "error",
         "no-octal": "error",
         "no-octal-escape": "error",
         "no-param-reassign": [
@@ -209,7 +216,12 @@
         "no-sequences": "error",
         "no-throw-literal": "error",
         "no-unmodified-loop-condition": "error",
-        "no-unused-expressions": "error",
+        "no-unused-expressions": [
+            "error",
+            {
+                "enforceForJSX": true
+            }
+        ],
         "no-unused-labels": "error",
         "no-useless-call": "error",
         "no-useless-catch": "error",
