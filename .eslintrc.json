@@ -9,7 +9,8 @@
     },
     "root": true,
     "plugins": [
-        "node"
+        "node",
+        "security"
     ],
     "rules": {
         // Possible Errors Section Start
@@ -645,9 +646,23 @@
         "node/prefer-global/url-search-params": "error",
         "node/prefer-global/url": "error",
         "node/prefer-promises/dns": "error",
-        "node/prefer-promises/fs": "error"
+        "node/prefer-promises/fs": "error",
         // Stylistic Issues Section End
         // Eslint Plugin Node End
+        // Eslint Plugin Security Start
+        "security/detect-unsafe-regex": "error",
+        "security/detect-buffer-noassert": "error",
+        "security/detect-child-process": "error",
+        "security/detect-disable-mustache-escape": "error",
+        "security/detect-eval-with-expression": "error",
+        "security/detect-no-csrf-before-method-override": "error",
+        "security/detect-non-literal-fs-filename": "error",
+        "security/detect-non-literal-regexp": "error",
+        "security/detect-non-literal-require": "error",
+        "security/detect-object-injection": "error",
+        "security/detect-possible-timing-attacks": "error",
+        "security/detect-pseudoRandomBytes": "error"
+        // Eslint Plugin Security End
     },
     "noInlineConfig": true
 }
