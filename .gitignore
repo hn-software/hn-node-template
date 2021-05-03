@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,windows,visualstudiocode,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,windows,visualstudiocode,linux
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,linux,windows,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,linux,windows,visualstudiocode
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -121,6 +121,14 @@ typings/
 .nuxt
 dist
 
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# rollup.js default build output
+dist/
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -144,6 +152,10 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# Temporary folders
+tmp/
+temp/
 
 ### VisualStudioCode ###
 .vscode/*
@@ -182,4 +194,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,windows,visualstudiocode,linux
+# End of https://www.toptal.com/developers/gitignore/api/git,node,linux,windows,visualstudiocode
