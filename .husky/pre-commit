@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# ./_/husky.sh will be automatically created with `npm prepare`. which runs `husky install`
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint
+npm run coverage # This also performs the tests.
