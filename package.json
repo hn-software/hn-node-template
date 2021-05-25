@@ -1,38 +1,38 @@
 {
-    "name": "hn-node-template",
-    "version": "1.0.0",
-    "engines": {
-        "node": ">=12.18.3"
-    },
-    "description": "Template for HN node applications.",
-    "private": true,
-    "bin": "src/app.js",
-    "main": "src/app.js",
-    "scripts": {
-        "start": "nodemon src/app.js",
-        "test": "mocha",
-        "coverage": "nyc mocha --global __coverage__",
-        "lint": "eslint .",
-        "prepare": "is-ci || husky install"
-    },
-    "author": "HN Software",
-    "license": "MIT",
-    "devDependencies": {
-        "chai": "4.3.4",
-        "chai-as-promised": "7.1.1",
-        "eslint": "7.26.0",
-        "eslint-plugin-chai-friendly": "0.6.0",
-        "eslint-plugin-mocha": "8.1.0",
-        "eslint-plugin-node": "11.1.0",
-        "eslint-plugin-promise": "5.1.0",
-        "eslint-plugin-security": "1.4.0",
-        "husky": "6.0.0",
-        "mocha": "8.4.0",
-        "nodemon": "2.0.7",
-        "nyc": "15.1.0",
-        "proxyquire": "2.1.3",
-        "sinon": "10.0.0",
-        "sinon-chai": "3.6.0",
-        "sinon-chai-in-order": "0.1.0"
-    }
+  "name": "hn-node-template",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=12.18.3"
+  },
+  "description": "Template for HN node applications.",
+  "private": true,
+  "bin": "src/app.js",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "test": "mocha",
+    "coverage": "nyc mocha --global __coverage__",
+    "lint": "eslint .",
+    "prepare": "is-ci || husky install"
+  },
+  "author": "HN Software",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "4.3.4",
+    "chai-as-promised": "7.1.1",
+    "eslint": "7.26.0",
+    "eslint-plugin-chai-friendly": "0.6.0",
+    "eslint-plugin-mocha": "8.1.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-security": "1.4.0",
+    "husky": "6.0.0",
+    "mocha": "8.4.0",
+    "nodemon": "2.0.7",
+    "nyc": "15.1.0",
+    "proxyquire": "2.1.3",
+    "sinon": "10.0.0",
+    "sinon-chai": "3.6.0",
+    "sinon-chai-in-order": "0.1.0"
+  }
 }
