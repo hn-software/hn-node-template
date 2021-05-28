@@ -9,6 +9,7 @@
   },
   "root": true,
   "plugins": [
+    "json",
     "node",
     "promise",
     "security"
@@ -610,6 +611,27 @@
       "before"
     ],
     // ECMAScript 6 Section End
+    // Eslint Plugin JSON Start
+    "json/undefined": "error",
+    "json/enum-value-mismatch": "error",
+    "json/unexpected-end-of-comment": "error",
+    "json/unexpected-end-of-string": "error",
+    "json/unexpected-end-of-number": "error",
+    "json/invalid-unicode": "error",
+    "json/invalid-escape-character": "error",
+    "json/invalid-character": "error",
+    "json/property-expected": "error",
+    "json/comma-expected": "error",
+    "json/colon-expected": "error",
+    "json/value-expected": "error",
+    "json/comma-or-close-backet-expected": "error",
+    "json/comma-or-close-brace-expected": "error",
+    "json/trailing-comma": "error",
+    "json/duplicate-key": "error",
+    "json/comment-not-permitted": "off",
+    "json/schema-resolve-error": "error",
+    "json/unknown": "error",
+    // Eslint Plugin JSON End
     // Eslint Plugin Node Start
     // Possible Errors Section Start
     "node/no-callback-literal": "error",
@@ -681,5 +703,12 @@
     "security/detect-pseudoRandomBytes": "error"
     // Eslint Plugin Security End
   },
-  "noInlineConfig": true
+  "noInlineConfig": true,
+  "overrides": [
+    {
+      // Eslint does not lint .json files naturally
+      // We have eslint plugin json so .json linting should be enabled
+      "files": ["*.json"]
+    }
+  ]
 }

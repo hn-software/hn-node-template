@@ -1,0 +1,5 @@
+# As a default behaviour, eslint ignores dot-files (except for .eslintrc.*), as well as dot-folders and their contents
+# We need to lint our json configuration files starts with dot
+# However this also cause linting all files starts with dot in node_modules and some irrelevant git-ignored folders like .nyc_output
+# We can think about it if it start becoming a problem
+!.*
