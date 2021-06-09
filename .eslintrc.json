@@ -703,7 +703,6 @@
     "security/detect-pseudoRandomBytes": "error"
     // Eslint Plugin Security End
   },
-  "noInlineConfig": true,
   "overrides": [
     {
       // Eslint does not lint .json files naturally
