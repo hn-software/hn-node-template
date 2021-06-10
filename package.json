@@ -13,6 +13,7 @@
     "test": "mocha",
     "coverage": "nyc mocha --global __coverage__",
     "lint": "eslint .",
+    "fix-lint": "eslint --fix .",
     "prepare": "is-ci || husky install"
   },
   "author": "HN Software",
