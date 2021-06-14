@@ -12,7 +12,8 @@
     "json",
     "node",
     "promise",
-    "security"
+    "security",
+    "sonarjs"
   ],
   "rules": {
     // Possible Errors Section Start
@@ -700,8 +701,45 @@
     "security/detect-non-literal-require": "error",
     "security/detect-object-injection": "error",
     "security/detect-possible-timing-attacks": "error",
-    "security/detect-pseudoRandomBytes": "error"
+    "security/detect-pseudoRandomBytes": "error",
     // Eslint Plugin Security End
+    // Eslint Plugin SonarJS Start
+    // Bug Detection Section Start
+    "sonarjs/no-all-duplicated-branches": "error",
+    "sonarjs/no-element-overwrite": "error",
+    "sonarjs/no-extra-arguments": "error",
+    "sonarjs/no-identical-conditions": "error",
+    "sonarjs/no-identical-expressions": "error",
+    "sonarjs/no-one-iteration-loop": "error",
+    "sonarjs/no-use-of-empty-return-value": "error",
+    // Bug Detection Section End
+    // Code Smell Detection Section Start
+    "sonarjs/cognitive-complexity": "error",
+    "sonarjs/max-switch-cases": [
+      "error",
+      5
+    ],
+    "sonarjs/no-collapsible-if": "error",
+    "sonarjs/no-collection-size-mischeck": "error",
+    "sonarjs/no-duplicate-string": [
+      "error",
+      2
+    ],
+    "sonarjs/no-duplicated-branches": "error",
+    "sonarjs/no-identical-functions": "error",
+    "sonarjs/no-inverted-boolean-check": "error",
+    "sonarjs/no-redundant-boolean": "error",
+    "sonarjs/no-redundant-jump": "error",
+    "sonarjs/no-same-line-conditional": "error",
+    "sonarjs/no-small-switch": "error",
+    "sonarjs/no-unused-collection": "error",
+    "sonarjs/no-useless-catch": "error",
+    "sonarjs/prefer-immediate-return": "error",
+    "sonarjs/prefer-object-literal": "error",
+    "sonarjs/prefer-single-boolean-return": "error",
+    "sonarjs/prefer-while": "error"
+    // Code Smell Detection Section End
+    // Eslint Plugin SonarJS End
   },
   "overrides": [
     {
