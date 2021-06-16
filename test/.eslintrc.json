@@ -63,7 +63,12 @@
     "mocha/valid-test-description": "off",
     // Eslint Plugin Mocha End
     // Eslint Plugin Chai Friendly Start
-    "chai-friendly/no-unused-expressions": "error"
+    "chai-friendly/no-unused-expressions": [
+      "error",
+      {
+        "enforceForJSX": true
+      }
+    ]
     // Eslint Plugin Chai Friendly End
   }
 }
