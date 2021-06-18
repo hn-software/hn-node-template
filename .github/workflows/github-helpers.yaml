@@ -1,0 +1,23 @@
+name: 'github-helpers'
+on:
+  pull_request_target:
+    types: [opened, reopened]
+permissions:
+  actions: none
+  checks: none
+  contents: none
+  deployments: none
+  issues: none
+  packages: none
+  pull-requests: none
+  repository-projects: none
+  security-events: none
+  statuses: none
+jobs:
+  auto-assignee-for-pr:
+    name: auto-assignee-for-pr
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: toshimaru/auto-author-assign@v1.3.5
