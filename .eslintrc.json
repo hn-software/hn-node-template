@@ -526,6 +526,24 @@
         "blankLine": "any",
         "prev": "cjs-import",
         "next": "cjs-import"
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": "block-like"
+      },
+      {
+        "blankLine": "always",
+        "prev": "block-like",
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
       }
     ],
     "prefer-exponentiation-operator": "error",
