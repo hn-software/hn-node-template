@@ -294,9 +294,7 @@
     // Stylistic Issues Section Start
     "array-bracket-newline": [
       "error",
-      {
-        "minItems": 2
-      }
+      "always"
     ],
     "array-bracket-spacing": "error",
     "array-element-newline": "error",
@@ -304,7 +302,10 @@
     "brace-style": "error",
     "camelcase": "error",
     "capitalized-comments": "error",
-    "comma-dangle": "error",
+    "comma-dangle": [
+      "error",
+      "always"
+    ],
     "comma-spacing": "error",
     "comma-style": "error",
     "computed-property-spacing": "error",
@@ -320,7 +321,10 @@
     "func-names": "error",
     "func-style": "error",
     "function-call-argument-newline": "error",
-    "function-paren-newline": "error",
+    "function-paren-newline": [
+      "error",
+      "always"
+    ],
     "id-denylist": "off",
     "id-length": "error",
     "id-match": "off",
@@ -575,10 +579,7 @@
     // ECMAScript 6 Section Start
     "arrow-body-style": [
       "error",
-      "as-needed",
-      {
-        "requireReturnForObjectLiteral": true
-      }
+      "always"
     ],
     "arrow-parens": "error",
     "arrow-spacing": "error",
