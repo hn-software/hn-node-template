@@ -294,7 +294,9 @@
     // Stylistic Issues Section Start
     "array-bracket-newline": [
       "error",
-      "always"
+      {
+        "minItems": 1
+      }
     ],
     "array-bracket-spacing": "error",
     "array-element-newline": "error",
@@ -323,7 +325,9 @@
     "function-call-argument-newline": "error",
     "function-paren-newline": [
       "error",
-      "always"
+      {
+        "minItems": 1
+      }
     ],
     "id-denylist": "off",
     "id-length": "error",
